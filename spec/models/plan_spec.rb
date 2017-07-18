@@ -8,7 +8,7 @@ RSpec.describe Plan, type: :model do
   # Validation tests
   # ensure columns are present before saving
   # it { should have_many(:plan_subscriptions).dependent(:destroy) }
-  # it { should belongs_to(:account).dependent(:destroy) }
+  # it { should belong_to(:account).dependent(:destroy) }
   it { should validate_presence_of(:name) }
   it { should validate_uniqueness_of(:name) }
   it { should validate_presence_of(:description) }
